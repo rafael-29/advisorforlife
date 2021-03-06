@@ -1,0 +1,1164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;600&display=swap');
+
+
+$one: #08313C;
+$cop: #0d3f5e;
+$back: #f3f6f7;
+$yel: #fac917;
+
+
+$monste: 'Montserrat', sans-serif;
+$labelle: 'La Belle Aurore', cursive;
+$ptsans: 'PT Sans', sans-serif;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@mixin align {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@import "./signin.scss";
+
+.logo-name{
+font-size: 2.2rem;
+font-family: $monste;
+color: $one;
+font-weight: 600;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 25px 0 25px;
+}
+.admin-con{
+color: $yel;
+font-size: 2rem;
+cursor: pointer;
+}
+
+.the-menus{
+position: fixed;
+@include align();
+background: whitesmoke;
+color: $one;
+left: 0;
+width: 40%;
+height: 100%;
+top: 0;
+transform-origin: left;
+transition: .5s;
+}
+.men-bx{
+height: 40px;
+width: 40px;
+
+@include align();
+cursor: pointer;
+position: relative;
+z-index: 99;
+}
+.men-line{
+height: 3px;
+background: $one;
+width: 30px;
+position: relative;
+transition: .5s;
+}
+
+.men-close{
+height: 40px;
+width: 40px;
+
+@include align();
+cursor: pointer;
+position: fixed;
+z-index: 99;
+}
+.men-close .men-line{
+background: transparent;
+transform: translateX(-20px);
+transition: .5;
+}
+.men-line::before{
+position: absolute;
+content: '';
+height: 3px;
+background: $one;
+width: 30px;
+transform: translate(0, 8px);
+transition: .5s;
+}
+.men-line::after{
+position: absolute;
+content: '';
+height: 3px;
+background: $one;
+width: 30px;
+transform: translate(0, -8px);
+transition: .5s;
+}
+.men-close .men-line::before{
+position: absolute;
+content: '';
+height: 3px;
+background: $one;
+width: 30px;
+transform: translate(20px, 0) rotate(-45deg);
+transition: .5s;
+}
+.men-close .men-line::after{
+position: absolute;
+content: '';
+height: 3px;
+background: $one;
+width: 30px;
+transform: translate(20px, 0) rotate(45deg);
+transition: .5s;
+}
+.themenu-ul{
+list-style: none;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+}
+.menu-li{
+color: $one;
+font-size: 2rem;
+margin: 10px 0;
+
+padding-bottom: 6px;
+}
+.menu-li:hover{
+border-bottom: 2px solid $one;
+}
+.menu-link{
+text-decoration: none;
+font-family: $monste;
+color: $one;
+}
+.circle{
+background: #fac917;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+clip-path: circle(550px at left -100px);
+z-index: -1;
+}
+.rectangle{
+position: fixed;
+top: 0;
+right: 0;
+width: 20%;
+height: 100%;
+background: #002D3D;
+z-index: -1;
+}
+
+.front{
+padding-top: 70px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 120px;
+}
+.banner-right{
+height: 460px;
+width: 440px;
+.banner-img{
+height: 100%;
+width: 100%;
+}
+}
+.b-leftone{
+margin-bottom: 40px;
+}
+.b-capone{
+font-family: sans-serif;
+font-size: 1.5rem;
+color: $one;
+}
+.b-captwo{
+font-size: 1.2rem;
+color: $one;
+font-family: sans-serif;
+}
+.cap-one{
+color: $one;
+font-family: sans-serif;
+font-size: 1.9rem;
+font-weight: 600;
+}
+.cap-a{
+font-family: sans-serif;
+color: $one;
+font-weight: 600;
+}
+.email-a{
+text-decoration: none;
+padding: 6px 20px;
+background: $one;
+color: white;
+font-size: 1.4rem;
+font-family: $monste;
+}
+.email-a:hover{
+opacity: .8;
+
+}
+
+.b-lefttwo{
+margin-bottom: 30px;
+}
+
+.how{
+padding: 100px;
+}
+.ask-name{
+text-align: center;
+font-family: $monste;
+color: $one;
+margin-bottom: 80px;
+}
+.askbx{
+height: 400px;
+width: 350px;
+cursor: pointer;
+transition: .5s;
+margin-bottom: 40px;
+.askimg{
+height: 100%;
+width: 100%;
+}
+}
+.askbx:hover{
+transform: scale(1.1);
+}
+
+.ask-cont{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+// SUNLIFE
+.sun-life{
+padding: 100px;
+}
+.sl-headone{
+font-family: $labelle;
+font-weight: 6000;
+font-size: 2.6rem;
+color: #fac917;
+margin-bottom: -35px;
+letter-spacing: 1px;
+}
+.sl-headtwo{
+font-size: 2rem;
+color: $one;
+font-family: $ptsans;
+margin-left: 80px;
+margin-bottom: 50px;
+}
+
+// BRIGHTER LIFE
+.sl-img{
+width: 60%;
+
+}
+.sl-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sl-iconbx{
+background: #fac917;
+height: 70px;
+width: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+margin-right: 20px;
+}
+.sl-ul{
+list-style: none;
+width: 400px;
+margin-right: 30px;
+margin-bottom: 30px;
+}
+.sl-li{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 20px;
+}
+.sl-hone{
+font-family: $monste;
+font-size: 1.5rem;
+color: $one;
+font-weight: 900;
+}
+.sl-para{
+color: $one;
+font-family: sans-serif;
+font-style: italic;
+font-size: 1.1rem;
+}
+.sl-rightimgbx{
+height: 300px;
+width: 500px;
+}
+.sl-right-img{
+height: 100%;
+width: 100%;
+}
+
+// BENEFITS
+.about-header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: $monste;
+font-weight: 600;
+color: white;
+background-color: $one;
+}
+#ben-type{
+padding: 4px 2px;
+background-color: whitesmoke;
+font-size: 1.2rem;
+cursor: pointer;
+}
+.ben-link{
+text-decoration: none;
+color:whitesmoke;
+}
+.about-page{
+background-color: $back;
+}
+.whatben-cont{
+padding: 140px 100px;
+}
+.the-benh1{
+font-family: $monste;
+font-size:2.5rem;
+color: $cop;
+margin-bottom: 20px;
+}
+.fa-facebook-f, .fa-linkedin-in, .fa-envelope{
+color: rgb(117, 38, 85);
+}
+.theben-iconz{
+list-style-type: none;
+display: flex;
+
+}
+.theben-iconli{
+margin-right: 15px;
+cursor: pointer;
+}
+.theben-ttle{
+font-size: 2.4rem;
+background: $yel;
+width: 679px;
+padding: 30px 18px;
+color: $one;
+font-family:$monste;
+letter-spacing: 2px;
+opacity: .9;
+margin-bottom: 20px;
+}
+.theben-iconz{
+margin-bottom: 30px;
+}
+.theben-p{
+font-size: 1.3rem;
+font-family: sans-serif;
+color: $cop;
+
+}
+.theben-span{
+font-weight: 600;
+
+}
+
+.theben-img{
+width: 450px;
+float: right;
+border-radius: 4px;
+margin-left: 7px;
+}
+
+
+.theben-ul2{
+list-style-type: none;
+}
+.theben-li2{
+margin-bottom: 20px;
+}
+.theben-a{
+color: rgb(117, 38, 85);
+}
+.the-benh3{
+padding-bottom: 8px;
+margin-bottom: 10px;
+
+}
+
+
+// ABOUT SUN
+.about-sun{
+padding: 100px;
+background-color: $back;
+}
+.about-sun-ttle{
+font-size: 2rem;
+color: $cop;
+font-family: $monste;
+margin-bottom: 15px;
+}
+
+.abt-sun-para{
+font-family: sans-serif;
+color: #2b2b2b;
+font-size: 1.2rem;
+}
+.abt-sun-span{
+font-weight: 600;
+font-size: 1.3rem;
+}
+.abt-sun-img{
+width: 100%;
+}
+
+// INTRODUCTION
+.intro-page{
+padding: 100px;
+}
+.intro-h{
+margin-bottom: 50px;
+}
+.intro-link{
+padding: 4px 12px;
+border-radius: 2px;
+color: $one;
+font-family: $monste;
+border: none;
+outline: none;
+cursor: pointer;
+font-weight: 600;
+}
+.intro-imgbx{
+text-align: center;
+margin-bottom: 25px;
+.intro-img{
+width: 100%;
+}
+}
+
+// FORMS
+.form-page{
+@include align();
+padding: 100px;
+background: $back;
+}
+.fone-prec{
+font-size: 1.4rem;
+font-family: $monste;
+font-weight: 600;
+color: $cop;
+margin-bottom: 40px;
+}
+.form-main{
+width: 550px;
+font-family: $monste;
+font-weight: 600;
+font-size: 1rem;
+color: rgba(0,0,0,.8)
+}
+.frm-lbl{
+margin-right: 5px;
+
+}
+.normal-inp{
+width: 100%;
+padding: 5px 4px;
+font-family: $monste;
+font-weight: 600;
+color: rgba(0,0,0,.7);
+outline: none;
+border: 1px solid rgba(0,0,0,.3);
+border-radius: 2px;
+}.form-prec{
+color: crimson;
+margin-bottom: 15px;
+}
+.diff-inp{
+border: 1px solid rgba(0,0,0,.3);
+border-radius: 2px;
+padding: 5px 4px;
+font-family: $monste;
+font-weight: 600;
+color: rgba(0,0,0,.7);
+outline: none;
+margin-right: 10px;
+width: 130px;
+}
+.form-div{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 10px;
+}
+.form-diff{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 10px;
+}
+.form-long{
+margin-bottom: 10px;
+}
+.if-span{
+color: crimson;
+}
+.frmone-btn{
+padding: 5px 15px;
+font-size: 1.5rem;
+margin-top: 20px;
+background-color: $cop;
+color: white;
+border: none;
+cursor: pointer;
+font-family: $monste;
+font-weight: 600;
+float: right;
+border-radius: 3px;
+letter-spacing: 1px;
+outline: none;
+margin-right: 50px;
+}
+.frmone-btn:active{
+background: white;
+color: $cop;
+}
+.frmone-btn:hover{
+opacity: .7;
+}
+
+    //////// FORM TWO
+.formtwo-page{
+padding: 100px 100px 200px 100px;
+background-color: $back;
+}
+.ftwo-prec{
+color: $one;
+letter-spacing: 1px;
+font-family: sans-serif;
+margin-bottom: 30px;
+}
+.span-ftwo{
+font-size: 1.3rem;
+color: $cop;
+letter-spacing: 1px;
+}
+.ftwo-inst{
+font-size: 1.2rem;
+font-family: sans-serif;
+color: $one;
+margin-bottom: 35px;
+}
+.frm-question{
+font-family: $monste;
+color: $cop;
+font-size: 1.2rem;
+font-weight: 600;
+}
+.radiobx{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 10px;
+}
+.q-choicebx{
+padding: 20px 10px;
+}
+.q-lbl{
+font-family: sans-serif;
+letter-spacing: 1px;
+color: $one;
+cursor: pointer;
+transform: translate(5px, 1px);
+font-size: 1rem;
+}
+.formtwo-answer-prec{
+color: $one;
+font-weight: 600;
+font-family: sans-serif;
+margin-bottom: 20px;
+}
+
+.inp{
+min-width: 30px;
+min-height: 30px;
+}
+// THANK YOU
+.finish-fill{
+@include align();
+flex-direction: column;
+padding: 100px;
+}
+.finishimg{
+width: 30%;
+}
+.f-h1{
+font-family: $monste;
+color: $one;
+margin-bottom: 20px;
+}
+
+.back-triangle{
+height: 160px;
+width: 160px;
+position: fixed;
+bottom: 0;
+right: 0;
+background: #3f3d56;
+@include align();
+cursor: pointer;
+}
+.tri-link{
+color: white;
+font-family: $monste;
+font-weight: 600;
+text-decoration: none;
+transform: rotate(-45deg);
+font-size: 2rem;
+letter-spacing: 1px;
+}
+.we-rec{
+font-family: $monste;
+font-size: 2rem;
+color: $cop;
+text-align: center;
+}
+// MEDIA
+@media(max-width: 840px){
+//FINISH
+.we-rec{
+font-family: $monste;
+font-size: 1.3rem;
+color: $cop;
+text-align: center;
+}
+
+.back-triangle{
+height: 100px;
+width: 100px;
+cursor: pointer;
+}
+.tri-link{
+font-size: 1.4rem
+}
+.finish-fill{
+@include align();
+flex-direction: column;
+padding: 100px 20px;
+}
+.finishimg{
+width: 60%;
+margin-bottom: 20px;
+}
+.f-h1{
+font-family: $monste;
+color: $one;
+text-align: center;
+font-size: 1.4rem;
+
+}
+
+
+// FORM TWO
+
+.formtwo-page{
+padding: 80px 10px 200px 10px;
+}
+// INTRO PAGE
+.intro-page{
+padding: 80px 10px;
+}
+.about-sun{
+padding: 90px 15px;
+background-color: $back;
+}
+.theben-img{
+width: 100%;
+float: right;
+margin-bottom: 23px;
+margin-left: 0;
+}
+
+.logo-name{
+font-size: 1.2rem;
+left: 15px;
+}
+.how{
+padding: 100px 10px;
+}
+.banner-right{
+display: none;
+}
+.rectangle{
+display: none;
+}
+.front{
+padding-top: 90px;
+}
+// SUNLIFE
+.sun-life{
+padding: 100px 0 100px 20px;
+}
+.sl-container{
+flex-wrap: wrap;
+}
+.sl-ul{
+width: 100%;
+}
+.sl-li{
+width: 100%;
+}
+.sl-iconbx{
+height: 55px;
+width: 55px;
+}
+.sl-hone{
+font-family: $monste;
+font-size: 1.2rem;
+color: $one;
+font-weight: 900;
+}
+.sl-para{
+color: $one;
+font-family: sans-serif;
+font-style: italic;
+font-size: 1rem;
+}
+// menu navbar
+.the-menus{
+width: 100%;
+}
+// BENEFITS
+.about-header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 2px 10px 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: $monste;
+font-weight: 600;
+color: white;
+background-color: $one;
+}
+#ben-type{
+padding: 4px 2px;
+background-color: whitesmoke;
+font-size: 1rem;
+cursor: pointer;
+}
+.whatben-cont{
+padding: 120px 15px;
+}
+}
+
+@media(max-width: 640px){
+// FORM PAGE
+.form-page{
+padding: 100px 10px;
+}
+.fone-prec{
+font-size: 1.1rem;
+}
+.form-main{
+width: 100%;
+font-family: $monste;
+font-weight: 600;
+}
+.diff-inp{
+padding: 4px;
+font-family: $monste;
+font-weight: 600;
+color: rgba(0,0,0,.7);
+outline: none;
+margin-right: 10px;
+width: 70px;
+}
+}
+
+// ADMIN PAGE
+.henry-page{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.dash-board{
+width: 16%;
+background: $one;
+height: 100vh;
+position: relative;
+}
+.dash-cnt{
+width: 100%;
+height: 100vh;
+overflow: scroll;
+position: relative;
+}
+.dash-line{
+position: relative;
+@include align();
+height: 40px;
+width: 50px;
+}
+.d-line{
+position: absolute;
+height: 2px;
+background-color: $one;
+width: 30px;
+}
+.d-line::before{
+position: absolute;
+content: '';
+transform: translateY(-7px);
+height: 2px;
+background-color: $one;
+width: 30px;
+}
+.d-line::after{
+position: absolute;
+content: '';
+transform: translateY(7px);
+height: 2px;
+background-color: $one;
+width: 30px;
+}
+.dash-cnt-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background: $back;
+margin-bottom: 50px;
+position: fixed;
+width: 86.2%;
+right: 0;
+z-index: 8;
+}
+.dash-name{
+font-size: 1.8rem;
+color: $one;
+font-family: $monste;
+cursor: pointer;
+}
+
+// DASHBOARD
+.dash-board{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+}
+.dbor{
+font-family: $monste;
+font-weight: 600;
+width: 100%;
+text-align: center;
+}
+.dashb-ttle{
+color: $back;
+background-color: $cop;
+margin-bottom: 25px;
+padding: 20px 0;
+}
+.dashb-btn{
+border: none;
+padding: 20px 0;
+background: none;
+color: white;
+outline: none;
+cursor: pointer;
+
+}
+.dashb-btn:hover{
+background: $back;
+color: $one;
+}
+.dash-active{
+border: none;
+padding: 20px 0;
+background: $yel;
+color: $one;
+outline: none;
+cursor: pointer;
+font-family: $monste;
+font-weight: 600;
+width: 100%;
+text-align: center;
+}
+
+.customerbx{
+max-width: 90%;
+position: relative;
+display: flex;
+height: 40px;
+margin: 0 auto 5px auto;
+cursor: pointer;
+}
+.customerbx:hover{
+background:  rgba(112, 170, 236, 0.8);
+}
+.customerbx:hover .d-c-name{
+color: $back;
+}
+.d-c-name{
+font-family: $monste;
+position: absolute;
+bottom: 0;
+font-size: 1.1rem;
+font-family: $monste;
+font-weight: 700;
+
+}
+.d-c-name{
+color: $cop;
+
+}
+.d-c-head{
+max-width: 90%;
+position: relative;
+display: flex;
+list-style: none;
+border-bottom: 2px solid $one;
+height: 40px;
+margin: 0 auto 1px auto;
+}
+.dash-cnt-inside{
+padding-top: 100px;
+padding-bottom: 150px;
+}
+.d-c-li{
+position: absolute;
+bottom: 0;
+font-size: 1.2rem;
+color: $one;
+font-family: $monste;
+font-weight: 700;
+
+}
+.d-c-li:nth-child(1){
+left: 0;
+}
+.d-c-li:nth-child(2){
+left: 30%;
+}
+.d-c-li:nth-child(3){
+left: 70%;
+}
+.d-c-name:nth-child(1){
+left: 0;
+bottom: 7px;
+}
+.d-c-name:nth-child(2){
+left: 30%;
+bottom: 7px;
+}
+.d-c-name:nth-child(3){
+left: 70%;
+bottom: 7px;
+}
+
+@media(max-width: 840px){
+.henry-page{
+flex-direction: column;
+}
+.dash-board{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+height: auto;
+flex-direction: row;
+position: fixed;
+top: 0;
+z-index: 22;
+}
+.dashb-ttle{
+display: none;
+}
+.dash-cnt-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background: $back;
+margin-bottom: 50px;
+position: fixed;
+width: 100%;
+right: 0;
+z-index: 8;
+top: 56px;
+}
+.dash-cnt-inside{
+padding-top: 160px;
+padding-bottom: 150px;
+}
+.d-c-em{
+display: none;
+}
+.dash-name{
+font-size: 1.4rem;
+}
+}
+
+// CUSTOMER INFO PAGE STYLE
+.customer-page{
+padding: 70px 80px;
+background-color: $back;
+}
+.cp-ttle{
+font-size: 2rem;
+font-family: $monste;
+padding-bottom: 5px;
+margin-bottom: 7px;
+border-bottom: 2px solid $one;
+color: $one;
+}
+.cp-pdet{
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 30px;
+}
+.cp-name{
+font-family: sans-serif;
+font-size: 1.3rem;
+color: $cop;
+margin-bottom: 12px;
+
+}
+
+.cp-span{
+color: #752655;
+}
+.c-a-tle{
+letter-spacing: 1px;
+color: $one;
+font-family: sans-serif;
+font-size: 1.6rem;
+margin-bottom: 30px;
+}
+
+.c-a-que{
+font-size: 1.4rem;
+font-weight: 700;
+font-family: $monste;
+color: $cop;
+margin-bottom: 10px;
+}
+.c-a-bx{
+margin-bottom: 20px;
+}
+
+.c-a-answ{
+font-family: sans-serif;
+font-size: 1.1rem;
+
+color: #752655;
+}
+@media(max-width: 600px){
+// CUSTOMER INFO PAGE STYLE
+.customer-page{
+padding: 60px 15px;
+}
+.cp-ttle{
+font-size: 2rem;
+font-family: $monste;
+padding-bottom: 3px;
+margin-bottom: 17px;
+border-bottom: 2px solid $one;
+color: $one;
+}
+.cp-name{
+font-size: 1.4rem;
+}
+}
+// footer/
+footer{
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+background: $yel;
+padding: 0 0 5px 30px;
+}
+.footer-left{
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+}
+.foot-img{
+width: 22%;
+margin-right: 25px;
+}
+
+@media(max-width: 740px){
+.admin-con{
+color: $one;
+size: 1.2rem;
+}
+
+.foot-cap{
+font-size: 1.1rem;
+}
+.foot-img{
+width: 29%;
+margin-right: 5px;
+}
+.foot-cap-p{
+font-size: 1rem;
+}
+footer{
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+background: $yel;
+padding: 0 0 3px 10px;
+}
+}
+@media(max-width: 400px){
+footer{
+padding: 0;
+}
+.b-lefttwo{
+margin-bottom: 15px;
+}
+}

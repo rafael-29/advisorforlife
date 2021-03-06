@@ -1220,7 +1220,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 10px 65px 10px 20px;
   background: #f3f6f7;
   margin-bottom: 50px;
   position: fixed;
@@ -1547,6 +1547,16 @@ footer {
   margin-right: 25px;
 }
 
+.sign-out-link {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  color: #f3f6f7;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+}
+
 @media (max-width: 740px) {
   .admin-con {
     color: #08313C;
@@ -1575,6 +1585,15 @@ footer {
     background: #fac917;
     padding: 0 0 3px 10px;
   }
+  .sign-out-link {
+    position: fixed;
+    bottom: 4%;
+    left: 1%;
+    color: #08313C;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1584,5 +1603,39 @@ footer {
   .b-lefttwo {
     margin-bottom: 15px;
   }
+}
+
+.sign-out-link:active {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  color: #fac917;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+}
+
+.add-articlebx {
+  float: right;
+  margin-right: 5%;
+  background-color: #e2e0f0;
+  color: #08313C;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.add-articlebx:hover {
+  float: right;
+  margin-right: 5%;
+  background-color: #0d3f5e;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

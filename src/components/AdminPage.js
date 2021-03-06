@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 const inq = 'inquiries'
 const articles = 'articles'
@@ -44,7 +45,7 @@ const renderInquiry = () => (
 
 const renderArticles = () => (
 <div className="add-articles">
-add articles
+    <div className="add-articlebx"><i class="fas fa-plus"></i> add article</div>
 </div>
 )
 
@@ -90,6 +91,7 @@ return(
         
         </div>
     </div>
+<Link to="/" className="sign-out-link">Sign out <i class="fas fa-sign-out-alt"></i></Link>
 </div>
 )
 }

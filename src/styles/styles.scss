@@ -867,7 +867,7 @@ width: 30px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 10px 20px;
+padding: 10px 65px 10px 20px;
 background: $back;
 margin-bottom: 50px;
 position: fixed;
@@ -1129,7 +1129,15 @@ align-items: flex-end;
 width: 22%;
 margin-right: 25px;
 }
-
+.sign-out-link{
+position: absolute;
+bottom: 2%;
+left: 1%;
+color: $back;
+text-decoration: none;
+font-size: 1.7rem;
+font-family: sans-serif;
+}
 @media(max-width: 740px){
 .admin-con{
 color: $one;
@@ -1153,6 +1161,15 @@ align-items: flex-end;
 background: $yel;
 padding: 0 0 3px 10px;
 }
+.sign-out-link{
+position: fixed;
+bottom: 4%;
+left: 1%;
+color: $one;
+text-decoration: none;
+font-size: 1.7rem;
+font-family: sans-serif;
+}
 }
 @media(max-width: 400px){
 footer{
@@ -1161,4 +1178,36 @@ padding: 0;
 .b-lefttwo{
 margin-bottom: 15px;
 }
+}
+
+.sign-out-link:active{
+position: absolute;
+bottom: 2%;
+left: 1%;
+color: $yel;
+text-decoration: none;
+font-size: 1.7rem;
+font-family: sans-serif;
+}
+.add-articlebx{
+float: right;
+margin-right: 5%;
+background-color: #e2e0f0;
+color: $one;
+font-family: $monste;
+font-weight: 600;
+padding: 6px 10px;
+border-radius: 20px;
+cursor: pointer;
+}
+.add-articlebx:hover{
+float: right;
+margin-right: 5%;
+background-color: $cop;
+color: white;
+font-family: $monste;
+font-weight: 600;
+padding: 6px 10px;
+border-radius: 20px;
+cursor: pointer;
 }

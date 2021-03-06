@@ -33,7 +33,7 @@ const renderInquiry = () => (
     customers.map(customer => (
     <div className="customerbx"
     key={customer._id} onClick={() => {
-    window.location.replace(`/adminpage/${customer._id}`)
+    window.location.replace(`https://sunadvisor-api.herokuapp.com/adminpage/${customer._id}`)
     }}>
     <div className="d-c-name">{customer.formone.fullname}</div>
     <div className="d-c-name">{customer.formone.mobilephone}</div>

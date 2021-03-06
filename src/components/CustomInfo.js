@@ -9,7 +9,7 @@ const id = props.theprops.match.params.id
 const [info, setInfo] = useState()
 
 const renderInfo = () => {
-axios.get(`/customer/${id}`)
+axios.get(`https://sunadvisor-api.herokuapp.com/customer/${id}`)
 .then( results => setInfo(results.data))
 .catch(err => console.log(err))
 }

@@ -11,7 +11,7 @@ const [customers, setCustomer] = useState()
 const [page, setPage] = useState(inq)
 
 const fetchData = () => {
-axios.get('/customer')
+axios.get('https://bakedbyartapi.herokuapp.com/customer')
 .then( result => setCustomer(result.data))
 .catch(err => console.log(err))
 }
@@ -31,7 +31,7 @@ const renderInquiry = () => (
     customers.map(customer => (
     <div className="customerbx"
     key={customer._id} onClick={() => {
-    window.location.replace(`https://sunadvisor-api.herokuapp.com/adminpage/${customer._id}`)
+    window.location.replace(`/adminpage/${customer._id}`)
     }}>
     <div className="d-c-name">{customer.formone.fullname}</div>
     <div className="d-c-name">{customer.formone.mobilephone}</div>

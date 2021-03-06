@@ -16,9 +16,7 @@ axios.get('/customer')
 .catch(err => console.log(err))
 }
 
-useEffect( () => {
-fetchData()
-}, [])
+
 
 const renderInquiry = () => (
 <React.Fragment>
@@ -55,6 +53,12 @@ const renderMessages = () => (
 The Inbox
 </div>
 )
+
+useEffect( () => {
+
+fetchData();
+
+},[]);
 
 return(
 <div className="henry-page">

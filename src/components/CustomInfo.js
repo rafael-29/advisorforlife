@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
-import axios from 'axios'
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import {Link} from 'react-router-dom';
+
 
 const CustomInfo = (props) => {
 
@@ -13,13 +14,6 @@ axios.get(`https://sunadvisor-api.herokuapp.com/customer/${id}`)
 .then( results => setInfo(results.data))
 .catch(err => console.log(err))
 }
-
-useEffect( () => {
-if(info === undefined){ console.log('no data')}else{
-console.log(info.formone)
-}
-
-}, [info])
 
 useEffect( () => {
 renderInfo()

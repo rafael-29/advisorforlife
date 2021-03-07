@@ -90,7 +90,7 @@ return (
     <div className="banner-right">
 
       <img className="banner-img"
-      src="/images/bannerone.jpg" alt="sunlife advisor" />
+      src="/images/frontpic.jpg" alt="sunlife advisor" />
 
     </div>
 </div>

@@ -49,7 +49,7 @@ return(
     <div className="formone-cnt">
         <p className="fone-prec">
             General Info Sheet to complete
-            remote appliciation form
+            remote application form
         </p>
 
         <form className="form-main">

@@ -980,21 +980,21 @@ font-weight: 700;
 left: 0;
 }
 .d-c-li:nth-child(2){
-left: 30%;
+left: 34%;
 }
 .d-c-li:nth-child(3){
-left: 70%;
+left: 72%;
 }
 .d-c-name:nth-child(1){
 left: 0;
 bottom: 7px;
 }
 .d-c-name:nth-child(2){
-left: 30%;
+left: 34%;
 bottom: 7px;
 }
 .d-c-name:nth-child(3){
-left: 70%;
+left: 72%;
 bottom: 7px;
 }
 
@@ -1016,6 +1016,7 @@ z-index: 22;
 .dashb-ttle{
 display: none;
 }
+
 .dash-cnt-header{
 display: flex;
 justify-content: space-between;
@@ -1027,7 +1028,7 @@ position: fixed;
 width: 100%;
 right: 0;
 z-index: 8;
-top: 56px;
+top: 53px;
 }
 .dash-cnt-inside{
 padding-top: 160px;
@@ -1046,13 +1047,29 @@ font-size: 1.4rem;
 padding: 70px 80px;
 background-color: $back;
 }
-.cp-ttle{
-font-size: 2rem;
-font-family: $monste;
+.cp-head-sep{
+display: flex;
+justify-content: space-between;
+align-items: center;
 padding-bottom: 5px;
 margin-bottom: 7px;
 border-bottom: 2px solid $one;
+}
+.cp-ttle{
+font-size: 2rem;
+font-family: $monste;
 color: $one;
+}
+.cp-delete-btn{
+padding: 4px 11px;
+background-color: crimson;
+color: white;
+border-radius: 4px;
+font-family: $monste;
+font-size: 1.4rem;
+cursor: pointer;
+border: none;
+outline: none;
 }
 .cp-pdet{
 display: flex;
@@ -1103,10 +1120,18 @@ padding: 60px 15px;
 .cp-ttle{
 font-size: 2rem;
 font-family: $monste;
-padding-bottom: 3px;
-margin-bottom: 17px;
-border-bottom: 2px solid $one;
 color: $one;
+}
+.cp-delete-btn{
+padding: 4px 11px;
+background-color: crimson;
+color: white;
+border-radius: 4px;
+font-family: $monste;
+font-size: 1.2rem;
+cursor: pointer;
+border: none;
+outline: none;
 }
 .cp-name{
 font-size: 1.4rem;
@@ -1210,4 +1235,12 @@ font-weight: 600;
 padding: 6px 10px;
 border-radius: 20px;
 cursor: pointer;
+}
+.no-data{
+font-family: $monste;
+margin-top: 1%;
+font-size: 1.8rem;
+letter-spacing: 2px;
+opacity: .8;
+margin-left: 5%;
 }

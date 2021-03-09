@@ -23,19 +23,21 @@ const renderInquiry = () => (
 <React.Fragment>
 <ul className="d-c-head">
     <li className="d-c-li">NAME</li>
-    <li className="d-c-li">PHONE</li>
+    <li className="d-c-li d-c-em">PHONE</li>
     <li className="d-c-li d-c-em">EMAIL</li>
 </ul>
+    
 
     {
-    customers === undefined ? <h3 style={{marginLeft: '5%'}}>Loading</h3> :
+    customers === undefined ? <h3 className="no-data">Loading</h3> :
+    !customers.length ? <h3 className="no-data">No inquiries</h3> :
     customers.map(customer => (
     <div className="customerbx"
     key={customer._id} onClick={() => {
     window.location.replace(`/adminpage/${customer._id}`)
     }}>
     <div className="d-c-name">{customer.formone.fullname}</div>
-    <div className="d-c-name">{customer.formone.mobilephone}</div>
+    <div className="d-c-name d-c-em">{customer.formone.mobilephone}</div>
     <div className="d-c-name d-c-em">{customer.formone.emailad}</div>
     </div>
     ))
@@ -73,7 +75,6 @@ return(
         className={page === articles ? 'dash-active' : "dashb-btn dbor"}>ARTICLES</button>
         <button onClick={() => setPage(messages)}
         className={page === messages ? 'dash-active' : "dashb-btn dbor"}>MESSAGES</button>
-
     </div>
     <div className="dash-cnt">
         <div className="dash-cnt-header">
@@ -91,7 +92,8 @@ return(
         
         </div>
     </div>
-<Link to="/" className="sign-out-link">Sign out <i class="fas fa-sign-out-alt"></i></Link>
+    
+<Link to="/" className="sign-out-link">Sign out <i className="fas fa-sign-out-alt"></i></Link>
 </div>
 )
 }

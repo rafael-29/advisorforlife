@@ -107,7 +107,7 @@ return(
 
     <p className="frm-question">
         <span className="q-span">II. </span>
-        What is/are your objective(s) for purchasing our product? (Choose all that apply)(Choose one)
+        What is/are your objective(s) for purchasing our product? (Choose all that apply)
     </p>
 
     <div className="q-choicebx">

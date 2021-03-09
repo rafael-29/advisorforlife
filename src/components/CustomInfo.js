@@ -15,14 +15,25 @@ axios.get(`https://bakedbyartapi.herokuapp.com/customer/${id}`)
 .catch(err => console.log(err))
 }
 
+const deleteThisInfo = () => {
+axios.delete(`https://bakedbyartapi.herokuapp.com/customer/delete/${id}`)
+.then( () => {
+alert('deleted from data')
+window.location.replace('/adminpage')})
+.catch(err => console.log(err))
+}
+
 useEffect( () => {
 renderInfo()
 }, [])
 
 const renderPersonDetails = () => (
 <React.Fragment>
-
+<div className='cp-head-sep'>
 <h3 className="cp-ttle">Person details</h3>
+<button onClick={deleteThisInfo}
+className="cp-delete-btn">DELETE</button>
+</div>
 <div className="cp-pdet">
     <div>
     <div className="cp-name">Full Name: <span className="cp-span">{info.formone.fullname}</span></div>

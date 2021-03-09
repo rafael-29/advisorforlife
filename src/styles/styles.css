@@ -1356,11 +1356,11 @@ header {
 }
 
 .d-c-li:nth-child(2) {
-  left: 30%;
+  left: 34%;
 }
 
 .d-c-li:nth-child(3) {
-  left: 70%;
+  left: 72%;
 }
 
 .d-c-name:nth-child(1) {
@@ -1369,12 +1369,12 @@ header {
 }
 
 .d-c-name:nth-child(2) {
-  left: 30%;
+  left: 34%;
   bottom: 7px;
 }
 
 .d-c-name:nth-child(3) {
-  left: 70%;
+  left: 72%;
   bottom: 7px;
 }
 
@@ -1425,7 +1425,7 @@ header {
     width: 100%;
     right: 0;
     z-index: 8;
-    top: 56px;
+    top: 53px;
   }
   .dash-cnt-inside {
     padding-top: 160px;
@@ -1444,13 +1444,37 @@ header {
   background-color: #f3f6f7;
 }
 
-.cp-ttle {
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+.cp-head-sep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 5px;
   margin-bottom: 7px;
   border-bottom: 2px solid #08313C;
+}
+
+.cp-ttle {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
   color: #08313C;
+}
+
+.cp-delete-btn {
+  padding: 4px 11px;
+  background-color: crimson;
+  color: white;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .cp-pdet {
@@ -1506,10 +1530,18 @@ header {
   .cp-ttle {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
-    padding-bottom: 3px;
-    margin-bottom: 17px;
-    border-bottom: 2px solid #08313C;
     color: #08313C;
+  }
+  .cp-delete-btn {
+    padding: 4px 11px;
+    background-color: crimson;
+    color: white;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
   }
   .cp-name {
     font-size: 1.4rem;
@@ -1637,5 +1669,14 @@ footer {
   padding: 6px 10px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.no-data {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1%;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  opacity: .8;
+  margin-left: 5%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -35,6 +35,12 @@ const renderMenu = () => (
     className="menu-link" 
     to="/intro">INTRODUCTION</Link>
     </li>
+
+    <li className="menu-li">
+    <Link 
+    className="menu-link" 
+    to="/contact">HAVE QUESTIONS ?</Link>
+    </li>
   </ul>
 </div>
 )

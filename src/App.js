@@ -12,6 +12,7 @@ import Thankyou from './components/Thankyou';
 import SignIn from './components/SignIn';
 import AdminPage from './components/AdminPage';
 import CustomInfo from './components/CustomInfo';
+import Contact from './components/Contact';
 
 
 const App = () => {
@@ -32,6 +33,10 @@ const renderAboutPage = () => (
 const renderCustomInfo = (props) => (
 <CustomInfo theprops={props}/>
 )
+
+const renderContact = () => (
+<Contact />
+)
 return(
 <Router>
 
@@ -45,6 +50,7 @@ return(
 <Route path="/signin" component={SignIn} />
 <Route exact path="/adminpage" component={AdminPage} />
 <Route path="/adminpage/:id" render={renderCustomInfo} />
+<Route path="/contact" render={renderContact} />
 
 </Router>
 )

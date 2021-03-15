@@ -1236,6 +1236,28 @@ header {
   cursor: pointer;
 }
 
+.fa-sign-out-alt {
+  font-size: 1.5rem;
+}
+
+.admin-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #08313C;
+}
+
+.fa-user-shield {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
 .dash-board {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1617,15 +1639,6 @@ footer {
     background: #fac917;
     padding: 0 0 3px 10px;
   }
-  .sign-out-link {
-    position: fixed;
-    bottom: 4%;
-    left: 1%;
-    color: #08313C;
-    text-decoration: none;
-    font-size: 1.7rem;
-    font-family: sans-serif;
-  }
 }
 
 @media (max-width: 400px) {
@@ -1637,14 +1650,8 @@ footer {
   }
 }
 
-.sign-out-link:active {
-  position: absolute;
-  bottom: 2%;
-  left: 1%;
-  color: #fac917;
-  text-decoration: none;
-  font-size: 1.7rem;
-  font-family: sans-serif;
+.sign-out-link {
+  display: none;
 }
 
 .add-articlebx {
@@ -1678,5 +1685,297 @@ footer {
   letter-spacing: 2px;
   opacity: .8;
   margin-left: 5%;
+}
+
+.contact-page {
+  padding: 140px;
+  background-color: #f3f6f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cform-inp {
+  outline: none;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  color: black;
+  opacity: .9;
+  border: none;
+  background: none;
+  width: 450px;
+}
+
+.inpnum {
+  position: relative;
+  color: red;
+}
+
+.inpnum::after {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 35px;
+  right: 7%;
+  top: -4px;
+  background-color: #f3f6f7;
+  z-index: 22;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  position: relative;
+}
+
+.cform-inpbx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #0d3f5e;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.cform-inpbx-m {
+  margin-bottom: 20px;
+}
+
+.cform-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0d3f5e;
+  padding-right: 10px;
+  position: relative;
+  margin-right: 13px;
+}
+
+.cform-name-m {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0d3f5e;
+  margin-bottom: 5px;
+}
+
+.cform-name::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 90%;
+  width: 1px;
+  background-color: #0d3f5e;
+}
+
+.cont-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #0d3f5e;
+}
+
+.cform-inp-m {
+  width: 100%;
+  background: none;
+  border: 2px solid #0d3f5e;
+  padding: 6px;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  opacity: .9;
+  outline: none;
+  border-radius: 5px;
+}
+
+.cform-btn {
+  padding: 7px;
+  width: 100px;
+  cursor: pointer;
+  color: #f3f6f7;
+  background-color: #0d3f5e;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  border-radius: 4px;
+}
+
+.cform-btn:active {
+  background-color: #f3f6f7;
+  color: #08313C;
+}
+
+@media (max-width: 900px) {
+  .contact-page {
+    padding: 100px 20px;
+    background-color: #f3f6f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inpnum::after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 35px;
+    right: 24%;
+    top: -4px;
+    background-color: #f3f6f7;
+    z-index: 22;
+  }
+  .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+    position: relative;
+  }
+  .cform-inp {
+    outline: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    color: black;
+    opacity: .9;
+    border: none;
+    background: none;
+    width: 250px;
+  }
+  .cform-name {
+    font-size: 1.1rem;
+    margin-right: 6px;
+    padding-right: 5px;
+  }
+  .cont-h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.i-p-hone {
+  margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #0d3f5e;
+  font-size: 2rem;
+}
+
+.inbox-page {
+  padding: 30px 40px;
+}
+
+.hen-capbx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hen-mesbx {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.hen-lbl {
+  margin-right: 7px;
+  font-size: 1.1rem;
+  color: #0d3f5e;
+}
+
+.hen-cap {
+  font-size: 1.1rem;
+  color: #0d3f5e;
+}
+
+.mes-email {
+  margin-bottom: 10px;
+}
+
+.hen-mess {
+  max-width: 500px;
+  margin-bottom: 20px;
+  opacity: .9;
+}
+
+.hen-span {
+  padding: 7px 12px;
+  background-color: #0d3f5e;
+  color: #f3f6f7;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.hen-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hen-phone {
+  margin-right: 10px;
+}
+
+.hen-btn-del {
+  padding: 7px 12px;
+  outline: none;
+  background: crimson;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hen-btn-del:active {
+  background-color: #f3f6f7;
+  color: crimson;
+}
+
+@media (max-width: 600px) {
+  .inbox-page {
+    padding: 20px 15px;
+  }
+  .i-p-hone {
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

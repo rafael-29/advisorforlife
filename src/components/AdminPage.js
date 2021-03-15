@@ -10,6 +10,7 @@ const AdminPage = () => {
 
 const [customers, setCustomer] = useState()
 const [page, setPage] = useState(inq)
+const [henMessages, setHenMessages] = useState()
 
 const fetchData = () => {
 axios.get('https://bakedbyartapi.herokuapp.com/customer')
@@ -17,6 +18,11 @@ axios.get('https://bakedbyartapi.herokuapp.com/customer')
 .catch(err => console.log(err))
 }
 
+const fetchMessages = () => {
+axios.get('https://bakedbyartapi.herokuapp.com/henrymessages')
+.then(results => setHenMessages(results.data))
+.catch(err => console.log(err))
+}
 
 
 const renderInquiry = () => (
@@ -51,16 +57,44 @@ const renderArticles = () => (
 </div>
 )
 
+const delMes = themes => {
+axios.delete(`https://bakedbyartapi.herokuapp.com/henrymessages/${themes}`)
+.then( () => alert('deleted successfully'))
+.catch(err  => console.log(err))
+}
+
 const renderMessages = () => (
 <div className="inbox-page">
-The Inbox
+    <div className="i-p-hone">Your Messages</div>
+    {
+    henMessages === undefined ? <h1>Loading messages</h1> : 
+    henMessages.map( mes => (
+    <div className="hen-mesbx" key={mes._id}>
+        
+        <div className="hen-capbx">
+        <div className="hen-lbl">From: </div>
+        <p className="hen-cap hen-name"> {mes.name}</p>
+        </div>
+
+        <p className="hen-cap mes-email">{mes.email}</p>
+        
+        <p className="hen-mess">{mes.message}</p>
+
+        <div className="hen-choices">
+        <p className="hen-phone">Call  - <span className="hen-span">{mes.phone} <i class="fas fa-mobile-alt"></i></span></p>
+
+        <button  onClick={delMes(mes._id)} className="hen-btn-del">DELETE</button>
+        </div>
+    </div>
+    ))
+    }
 </div>
 )
 
 useEffect( () => {
 
 fetchData();
-
+fetchMessages();
 },[]);
 
 return(
@@ -78,11 +112,16 @@ return(
     </div>
     <div className="dash-cnt">
         <div className="dash-cnt-header">
-            <div className="dash-line">
-                <div className="d-line"></div>
+            <div className="admin-header">
+            <div>
+            <i class="fas fa-user-shield"></i>
+            </div>
+            <div className="dash-name">henry tupas</div>
+            
             </div>
             <div className="log-out">
-                <div className="dash-name">henry tupas <i className="fas fa-sort-down"></i></div>
+                <div  onClick={() => window.location.replace('/')}
+                 className="dash-name">Sign out <i className="fas fa-sign-out-alt"></i></div>
             </div>
         </div>
         <div className="dash-cnt-inside">
@@ -92,6 +131,7 @@ return(
         
         </div>
     </div>
+    
     
 <Link to="/" className="sign-out-link">Sign out <i className="fas fa-sign-out-alt"></i></Link>
 </div>

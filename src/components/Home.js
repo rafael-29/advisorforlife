@@ -40,7 +40,7 @@ const renderMenu = () => (
     <li className="menu-li">
     <Link 
     className="menu-link" 
-    to="/intro">ARTICLES</Link>
+    to="/articles">ARTICLES</Link>
     </li>
 
     <li className="menu-li">

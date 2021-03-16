@@ -14,6 +14,7 @@ import AdminPage from './components/AdminPage';
 import CustomInfo from './components/CustomInfo';
 import Contact from './components/Contact';
 import AddArticles from './components/AddArticles';
+import Articles from './components/Articles';
 
 
 const App = () => {
@@ -53,6 +54,7 @@ return(
 <Route path="/adminpage/:id" render={renderCustomInfo} />
 <Route path="/contact" render={renderContact} />
 <Route path="/addarticles" component={AddArticles} />
+<Route path="/articles" component={Articles} />
 
 </Router>
 )

@@ -63,7 +63,7 @@ const renderArticles = () => (
     <div onClick={() => window.location.replace('/addarticles')}
     className="add-articlebx"><i class="fas fa-plus"></i> add article</div>
     {
-    henBlogs === undefined ? <h1>Loading ... </h1> :
+    henBlogs === undefined ? <h1>Loading ... </h1> : !henBlogs.length ? <h1 className="h-empty">NO POST AT THE MOMENT</h1> :
     henBlogs.map( blog => (
     <div className="hen-blogbx" key={blog._id}>
         <h2 className="h-b-htwo">{blog.title}</h2>
@@ -75,14 +75,12 @@ const renderArticles = () => (
         <p className="h-b-pone">{blog.content}</p>
 
         {blog.titletwo ? <p className="h-b-ttletwo">{blog.titletwo}</p>: <></>}
-        {blog.contenttwo ? <p className="h-b-ttletwo">{blog.contenttwo}</p>: <></>}
+        {blog.contenttwo ? <p className="h-b-cnttwo">{blog.contenttwo}</p>: <></>}
 
-        <div className="h-b-btnbx">
-            <button 
-            className="h-b-btn">Edit</button>
-            <button onClick={() => delHenBlog(blog)}
-            className="h-b-btn">Delete</button>
-        </div>
+
+        <button onClick={() => delHenBlog(blog)}
+        className="h-b-btn h-del">Delete</button>
+
 
     </div>
     ))
@@ -109,7 +107,7 @@ const renderMessages = () => (
 <div className="inbox-page">
     <div className="i-p-hone">Your Messages</div>
     {
-    henMessages === undefined ? <h1>Loading messages</h1> : 
+    henMessages === undefined ? <h1>Loading messages</h1> : !henMessages.length ? <h1 className="h-empty">NO MESSAGES</h1> :
     henMessages.map( mes => (
     <div className="hen-mesbx" key={mes._id}>
         

@@ -20,8 +20,8 @@ setState({...state, [name]: value})
 const submitState = () => {
 axios.post('https://bakedbyartapi.herokuapp.com/henblogs/add', state)
 .then( () => {
-alert('henry blog has been posted')
-window.location.reload()
+alert('henry blog has been posted');
+window.location.reload();
 }).catch(err => console.log(err))
 }
 
@@ -74,7 +74,7 @@ return (
         </div>
         </div>
 
-        <button onClick={submitState} type="submit" className="a-a-sub">POST BLOG</button>
+        <button onClick={submitState} className="a-a-sub">POST BLOG</button>
 
     </div>
 </div>

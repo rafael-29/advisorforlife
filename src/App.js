@@ -13,6 +13,7 @@ import SignIn from './components/SignIn';
 import AdminPage from './components/AdminPage';
 import CustomInfo from './components/CustomInfo';
 import Contact from './components/Contact';
+import AddArticles from './components/AddArticles';
 
 
 const App = () => {
@@ -51,6 +52,7 @@ return(
 <Route exact path="/adminpage" component={AdminPage} />
 <Route path="/adminpage/:id" render={renderCustomInfo} />
 <Route path="/contact" render={renderContact} />
+<Route path="/addarticles" component={AddArticles} />
 
 </Router>
 )

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import Footer from './Footer'
 
 export default function Home() {
 
@@ -34,6 +35,12 @@ const renderMenu = () => (
     <Link 
     className="menu-link" 
     to="/intro">INTRODUCTION</Link>
+    </li>
+
+    <li className="menu-li">
+    <Link 
+    className="menu-link" 
+    to="/intro">ARTICLES</Link>
     </li>
 
     <li className="menu-li">
@@ -107,24 +114,24 @@ return (
     <div className="ask-cont">
 
       <div className="askbx">
-        <a href="mailto:henry.d.tupas@sunlife.com.ph">
+        <Link to="/contact">
         <img src="/images/askmehowone.png"
         alt="advisory" className="askimg" />
-        </a>
+        </Link>
       </div>
 
       <div className="askbx">
-      <a href="mailto:henry.d.tupas@sunlife.com.ph">
+      <Link to="/contact">
         <img src="/images/askmehowtwo.png"
         alt="advisory" className="askimg" />
-        </a>
+        </Link>
       </div>
 
       <div className="askbx">
-      <a href="mailto:henry.d.tupas@sunlife.com.ph">
+      <Link to="/contact">
         <img src="/images/askmehowthree.jpg"
         alt="advisory" className="askimg" />
-        </a>
+        </Link>
       </div>
       
     </div>
@@ -193,23 +200,13 @@ return (
       </div>
   </div>
 
+  <Link to="/contact" className="askme-btn">HOW TO START ?</Link>
 </div>
-<footer>
-  <div className="footer-left">
-    <img src="images/henrypic.jpg" alt="sun advisor"
-    className="foot-img" />
-    <div className="b-lefttwo">
-        <p className="b-captwo foot-cap-p"> <span className="cap-one foot-cap">Henry D. Tupas</span><br />
-        Sun Life Advisor, King Melchizedek Unit<br />
-        
-        <a className="cap-a"
-        href="mailto:henry.d.tupas@sunlife.com.ph">henry.d.tupas@sunlife.com.ph</a><br/>
-        0917-187-8443
-        </p>
-    </div>
-  </div>
 
-</footer>
+
+
+
+<Footer />
 </div>
 )
 }

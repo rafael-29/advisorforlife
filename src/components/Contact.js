@@ -35,12 +35,12 @@ return(
 <div className="contact-page">
 
     <div className="about-header">
-    <Link className="ben-link"
-    to="/"><i className="fas fa-chevron-left"></i> Back</Link>
+        <Link className="ben-link"
+        to="/"><i className="fas fa-chevron-left"></i> Back</Link>
 
-    <div>
+        <div>
+        </div>
     </div>
-</div>
 
     <form className="contact-form" onSubmit={sendForm}>
         <h2 className="cont-h2">CONTACT FORM</h2>
@@ -59,7 +59,7 @@ return(
             className="cform-inp" />
         </div>
 
-        <div className="cform-inpbx inpnum">
+        <div className="cform-inpbx inpnumdatecreated">
             <div className="cform-name">Phone</div>
             <input type="number" onwheel="this.blur()" value={cForm.phone}
             onChange={changeCForm} name="phone"

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 $one: #08313C;
 $cop: #0d3f5e;
@@ -14,6 +14,7 @@ $yel: #fac917;
 $monste: 'Montserrat', sans-serif;
 $labelle: 'La Belle Aurore', cursive;
 $ptsans: 'PT Sans', sans-serif;
+$dancing: 'Dancing Script', cursive;
 *{
 margin: 0;
 padding: 0;
@@ -26,6 +27,7 @@ align-items: center;
 }
 
 @import "./signin.scss";
+
 
 .logo-name{
 font-size: 2.2rem;
@@ -134,7 +136,7 @@ flex-direction: column;
 }
 .menu-li{
 color: $one;
-font-size: 2rem;
+font-size: 1.6rem;
 margin: 10px 0;
 
 padding-bottom: 6px;
@@ -175,7 +177,7 @@ align-items: center;
 margin-bottom: 120px;
 }
 .banner-right{
-height: 450px;
+height: 480px;
 width: 400px;
 .banner-img{
 height: 100%;
@@ -256,8 +258,30 @@ flex-wrap: wrap;
 
 
 // SUNLIFE
+.askme-btn{
+display: flex;
+justify-self: center;
+align-self: center;
+margin-top: 50px;
+text-decoration: none;
+color: white;
+background-color: $one;
+padding: 5px 9px;
+font-size: 1.4rem;
+border-radius: 5px;
+font-family: $monste;
+}
+.askme-btn:hover{
+opacity: .8;
+}
+.askme-btn:active{
+color: black;
+background-color: white;
+}
 .sun-life{
-padding: 100px;
+padding: 90px 80px 140px 80px;
+display: flex;
+flex-direction: column;
 }
 .sl-headone{
 font-family: $labelle;
@@ -326,6 +350,12 @@ width: 500px;
 .sl-right-img{
 height: 100%;
 width: 100%;
+}
+@media(max-width: 600px){
+.sl-rightimgbx{
+height: 300px;
+width: 400px;
+}
 }
 
 // BENEFITS
@@ -737,7 +767,7 @@ padding-top: 90px;
 
 // SUNLIFE
 .sun-life{
-padding: 100px 0 100px 20px;
+padding: 100px 0 150px 12px;
 }
 .sl-container{
 flex-wrap: wrap;
@@ -1213,28 +1243,7 @@ margin-bottom: 15px;
 .sign-out-link{
 display: none;
 }
-.add-articlebx{
-float: right;
-margin-right: 5%;
-background-color: #e2e0f0;
-color: $one;
-font-family: $monste;
-font-weight: 600;
-padding: 6px 10px;
-border-radius: 20px;
-cursor: pointer;
-}
-.add-articlebx:hover{
-float: right;
-margin-right: 5%;
-background-color: $cop;
-color: white;
-font-family: $monste;
-font-weight: 600;
-padding: 6px 10px;
-border-radius: 20px;
-cursor: pointer;
-}
+
 .no-data{
 font-family: $monste;
 margin-top: 1%;
@@ -1482,4 +1491,98 @@ padding: 20px 15px;
 font-size: 1.7rem;
 margin-bottom: 50px;
 }
+}
+
+// ARTICLE ADMIN PAGE STYLE
+.add-articlebx{
+float: right;
+margin-right: 5%;
+background-color: #e2e0f0;
+color: $one;
+font-family: $monste;
+font-weight: 600;
+padding: 6px 10px;
+border-radius: 20px;
+cursor: pointer;
+}
+.add-articlebx:hover{
+float: right;
+margin-right: 5%;
+background-color: $cop;
+color: white;
+font-family: $monste;
+font-weight: 600;
+padding: 6px 10px;
+border-radius: 20px;
+cursor: pointer;
+}
+.add-articles{
+padding:0 0 50px 20px;
+}
+.h-b-htwo{
+font-family: $monste;
+color: $one;
+font-size: 2rem;
+}
+.h-b-posted{
+font-family: monospace;
+opacity: .9;
+font-size: 1.2rem;
+
+margin-left: 20px;
+}
+.h-b-span{
+font-family: $ptsans;
+font-weight: 600;
+font-size: .9rem;
+}
+
+// ADD ARTICLES STYLES
+.a-a-hide{
+display: none;
+}
+.add-article-page{
+padding: 120px 100px;
+@include align();
+}
+
+.add-article-form{
+width: 540px;
+}
+.a-a-div{
+margin-bottom: 15px;
+}
+.a-a-inp{
+width: 100%;
+padding: 5px;
+font-size: 1.2rem;
+border: 1px solid $one;
+border-radius: 4px;
+outline: none;
+}
+.a-a-inp::placeholder{
+opacity: .7;
+font-family: $monste;
+color: $one;
+}
+.a-a-sub{
+padding: 5px 8px;
+font-size: 1.2rem;
+font-weight: 600px;
+color: white;
+background-color: $one;
+border: none;
+border-radius: 4px;
+outline: none;
+}
+.a-a-add{
+padding: 5px 8px;
+font-size: 1.2rem;
+font-weight: 600px;
+color: white;
+background-color: $one;
+border: none;
+border-radius: 4px;
+outline: none;   
+margin-right: 30px;
 }

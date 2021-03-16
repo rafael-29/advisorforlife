@@ -10,7 +10,9 @@ const AdminPage = () => {
 
 const [customers, setCustomer] = useState()
 const [page, setPage] = useState(inq)
+
 const [henMessages, setHenMessages] = useState()
+const [henBlogs, setHenBlogs] = useState()
 
 const fetchData = () => {
 axios.get('https://bakedbyartapi.herokuapp.com/customer')
@@ -24,6 +26,11 @@ axios.get('https://bakedbyartapi.herokuapp.com/henrymessages')
 .catch(err => console.log(err))
 }
 
+const fetchHenBlogs = () => {
+axios.get('https://bakedbyartapi.herokuapp.com/henblogs')
+.then( results => setHenBlogs(results.data))
+.catch(err => console.log(err))
+}
 
 const renderInquiry = () => (
 <React.Fragment>
@@ -53,13 +60,48 @@ const renderInquiry = () => (
 
 const renderArticles = () => (
 <div className="add-articles">
-    <div className="add-articlebx"><i class="fas fa-plus"></i> add article</div>
+    <div onClick={() => window.location.replace('/addarticles')}
+    className="add-articlebx"><i class="fas fa-plus"></i> add article</div>
+    {
+    henBlogs === undefined ? <h1>Loading ... </h1> :
+    henBlogs.map( blog => (
+    <div className="hen-blogbx" key={blog._id}>
+        <h2 className="h-b-htwo">{blog.title}</h2>
+        <p className="h-b-posted"><i>Published</i> <span className="h-b-span">{new Date(blog.datecreated).toLocaleDateString('en-us', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+        })}</span> </p>
+        <p className="h-b-pone">{blog.content}</p>
+
+        {blog.titletwo ? <p className="h-b-ttletwo">{blog.titletwo}</p>: <></>}
+        {blog.contenttwo ? <p className="h-b-ttletwo">{blog.contenttwo}</p>: <></>}
+
+        <div className="h-b-btnbx">
+            <button 
+            className="h-b-btn">Edit</button>
+            <button onClick={() => delHenBlog(blog)}
+            className="h-b-btn">Delete</button>
+        </div>
+
+    </div>
+    ))
+    }
 </div>
 )
-
+const delHenBlog = (theblog) => {
+axios.delete(`https://bakedbyartapi.herokuapp.com/henblogs/delete/${theblog._id}`)
+.then( () => {
+alert('henry article has been deleted')
+fetchHenBlogs()
+})
+.catch(err => console.log(err))
+}
 const delMes = themes => {
-axios.delete(`https://bakedbyartapi.herokuapp.com/henrymessages/${themes}`)
-.then( () => alert('deleted successfully'))
+axios.delete(`https://bakedbyartapi.herokuapp.com/henrymessages/delete/${themes}`)
+.then( () => {
+alert('deleted successfully')
+fetchMessages(); })
 .catch(err  => console.log(err))
 }
 
@@ -83,7 +125,7 @@ const renderMessages = () => (
         <div className="hen-choices">
         <p className="hen-phone">Call  - <span className="hen-span">{mes.phone} <i class="fas fa-mobile-alt"></i></span></p>
 
-        <button  onClick={delMes(mes._id)} className="hen-btn-del">DELETE</button>
+        <button  onClick={() => delMes(mes._id)} className="hen-btn-del">DELETE</button>
         </div>
     </div>
     ))
@@ -95,6 +137,9 @@ useEffect( () => {
 
 fetchData();
 fetchMessages();
+fetchHenBlogs();
+
+
 },[]);
 
 return(

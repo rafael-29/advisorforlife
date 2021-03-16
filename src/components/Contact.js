@@ -49,7 +49,7 @@ return(
             <div className="cform-name">Full Name</div>
             <input type="text" value={cForm.name}
             onChange={changeCForm} name="name"
-            className="cform-inp" />
+            className="cform-inp inp-name" />
         </div>
 
         <div className="cform-inpbx">

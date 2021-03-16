@@ -35,7 +35,7 @@ btn.style.display="none"
 
 return (
 <div className="add-article-page">
-<   div className="about-header">
+    <div className="about-header">
         <Link className="ben-link"
         to="/"><i className="fas fa-chevron-left"></i> Back</Link>
 

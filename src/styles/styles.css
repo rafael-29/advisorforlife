@@ -2131,7 +2131,7 @@ footer {
 .add-articlebx {
   position: absolute;
   right: 5%;
-  top: 15%;
+  top: 20%;
   margin-right: 5%;
   background-color: #e2e0f0;
   color: #08313C;
@@ -2235,6 +2235,7 @@ footer {
   outline: none;
   margin-right: 30px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .a-a-sub:active {

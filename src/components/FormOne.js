@@ -29,9 +29,13 @@ setState({...state, [name]: value})
 
 const submitToLocal = e => {
 e.preventDefault();
+
+if(state.fullname === '') return alert('Please Enter Your Name')
+
+
 localStorage.setItem('form-one', JSON.stringify(state))
 
-if(state.govid === '') return alert('complete the form')
+
 window.location.replace('/form/2')
 }
 

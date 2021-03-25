@@ -20,9 +20,9 @@ import Articles from './components/Articles';
 
 const App = () => {
 useEffect( () => {
-ReactGA.initialize('G-LC2C1FXDZR')
-
+ReactGA.initialize('UA-192961444-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
+
 }, [ReactGA])
 
 

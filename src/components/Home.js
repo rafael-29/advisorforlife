@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
+
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
-import ReactGa  from 'react-ga';
+
 
 export default function Home() {
 
@@ -53,11 +54,9 @@ const renderMenu = () => (
 </div>
 )
 
-useEffect( () => {
-  ReactGa.initialize('ReactGa')
 
-  ReactGa.pageview('/')
-}, [])
+
+
 return (
 <div className="home-page">
 {renderMenu()}

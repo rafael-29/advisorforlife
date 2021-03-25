@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import ReactGA from 'react-ga';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './styles/styles.css';
 
@@ -18,6 +19,11 @@ import Articles from './components/Articles';
 
 
 const App = () => {
+useEffect( () => {
+ReactGA.initialize('G-LC2C1FXDZR')
+
+ReactGA.pageview(window.location.pathname + window.location.search);
+}, [ReactGA])
 
 
 const renderHomePage = () => (

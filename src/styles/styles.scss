@@ -35,7 +35,15 @@ font-family: $monste;
 color: $one;
 font-weight: 600;
 }
+.privacy-page{
+padding: 4%;
+color: $one;
 
+}
+.privacy-page p{
+    color: $cop;
+    margin-bottom: 15px;
+}
 header{
 display: flex;
 justify-content: space-between;

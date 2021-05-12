@@ -151,6 +151,16 @@
   font-weight: 600;
 }
 
+.privacy-page {
+  padding: 4%;
+  color: #08313C;
+}
+
+.privacy-page p {
+  color: #0d3f5e;
+  margin-bottom: 15px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

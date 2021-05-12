@@ -26,3 +26,5 @@ return(
 </div>
 )
 }
+
+export default Terms

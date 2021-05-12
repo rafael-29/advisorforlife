@@ -64,7 +64,7 @@ return(
 <Route path="/addarticles" component={AddArticles} />
 <Route path="/articles" component={Articles} />
 <Route path="/privacy" component={Privacy} />
-<Route path="/terms" component={Terms} />
+<Route path="/termscon" component={Terms} />
 
 </Router>
 )

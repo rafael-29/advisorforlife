@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+import './terms-policy.css'
 const Privacy = () => {
 
 

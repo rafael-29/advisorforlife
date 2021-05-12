@@ -17,6 +17,7 @@ import Contact from './components/Contact';
 import AddArticles from './components/AddArticles';
 import Articles from './components/Articles';
 import Privacy from './components/Privacy';
+import Terms from './components/Terms'
 
 
 const App = () => {
@@ -63,6 +64,7 @@ return(
 <Route path="/addarticles" component={AddArticles} />
 <Route path="/articles" component={Articles} />
 <Route path="/privacy" component={Privacy} />
+<Route path="/terms" component={Terms} />
 
 </Router>
 )

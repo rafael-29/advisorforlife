@@ -16,6 +16,7 @@ import CustomInfo from './components/CustomInfo';
 import Contact from './components/Contact';
 import AddArticles from './components/AddArticles';
 import Articles from './components/Articles';
+import Privacy from './components/Privacy';
 
 
 const App = () => {
@@ -61,6 +62,7 @@ return(
 <Route path="/contact" render={renderContact} />
 <Route path="/addarticles" component={AddArticles} />
 <Route path="/articles" component={Articles} />
+<Route path="/privacy" component={Privacy} />
 
 </Router>
 )

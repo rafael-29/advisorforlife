@@ -154,6 +154,7 @@
 .privacy-page {
   padding: 4%;
   color: #08313C;
+  list-style: none;
 }
 
 .privacy-page p {

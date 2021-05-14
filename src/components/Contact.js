@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import {Checkbox, FormControlLabel} from '@material-ui/core'
 
 
 
@@ -12,6 +13,8 @@ email: '',
 phone: '',
 message: ''
 })
+
+const [accept, setAccept] = useState(false)
 
 const changeCForm = e => {
 const {name, value} = e.target
@@ -72,6 +75,10 @@ return(
             onChange={changeCForm} name="message"
             className="cform-inp-m" />
         </div>
+
+        <FormControlLabel checked={accept}
+        control={<Checkbox>I have read and accept <Link to="/termscon">Terms</Link> and <Link to="/privacy">Privacy Policy</Link> </Checkbox>}
+        onChange={() => setAccept(!accept)} />
 
         <button className="cform-btn">SEND</button>
     </form>

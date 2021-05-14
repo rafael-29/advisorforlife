@@ -24,6 +24,7 @@ setcForm({...cForm, [name]: value})
 
 const sendForm = e => {
 e.preventDefault();
+if(accept === false) return alert('Please read and accept our terms and policies')
 
 axios.post('https://bakedbyartapi.herokuapp.com/henrymessages/add', cForm)
 .then( () => {
@@ -76,8 +77,8 @@ return(
             className="cform-inp-m" />
         </div>
 
-        <FormControlLabel checked={accept}
-        control={<Checkbox>I have read and accept <Link to="/termscon">Terms</Link> and <Link to="/privacy">Privacy Policy</Link> </Checkbox>}
+        <FormControlLabel checked={accept} label={`I have read and accept ${<Link to="/termscon">Terms</Link>} and ${<Link to="/privacy">Privacy Policy</Link>}`}
+        control={<Checkbox />}
         onChange={() => setAccept(!accept)} />
 
         <button className="cform-btn">SEND</button>

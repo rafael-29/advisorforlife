@@ -77,7 +77,7 @@ return(
             className="cform-inp-m" />
         </div>
 
-        <FormControlLabel checked={accept} label={`I have read and accept ${<Link to="/termscon">Terms</Link>} and ${<Link to="/privacy">Privacy Policy</Link>}`}
+        <FormControlLabel checked={accept} label={`I have read and accept ${(<Link to="/termscon">Terms</Link>)} and ${(<Link to="/privacy">Privacy Policy</Link>)}`}
         control={<Checkbox />}
         onChange={() => setAccept(!accept)} />
 

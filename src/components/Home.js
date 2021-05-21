@@ -92,17 +92,22 @@ return (
     </div>
 
     <div className="b-lefttwo">
-      <p className="b-captwo"> <span className="cap-one">Henry D. Tupas</span><br />
-      Sun Life Advisor, King Melchizedek Unit<br />
-      Crimson Queen Branch <br/>
+      <p className="b-captwo"> <span className="cap-one">Are You Insured </span><br />
+      if you are looking for high touch service and impatial advice you've come<br />
+      you've come to the right placec<br/>
       <a className="cap-a"
       href="mailto:henry.d.tupas@sunlife.com.ph">henry.d.tupas@sunlife.com.ph</a><br/>
       0917-187-8443
       </p>
     </div>
 
+    <p className="b-captwo">Check Types of Insurance
+    </p>
+    <Link to="/benefits" className="email-a"
+    id="gotomail">Insurance Types</Link>
+    <br />
     <Link to="/form/1" className="email-a"
-    id="gotomail">AVAIL NOW</Link>
+    id="gotomail">Avail Now</Link>
 
     </div>
 

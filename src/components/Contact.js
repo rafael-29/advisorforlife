@@ -84,7 +84,7 @@ return(
             alignItems: 'center'
         }}>
         <Checkbox checked={accept} onChange={() => setAccept(!accept)} />
-        <Typography variant="h6">I have read and accept <Link to="/termscon">Terms</Link>and <Link to="/privacy"> Policy</Link></Typography>
+        <Typography variant="h6">I have read and accept <Link className="termspol-a" to="/termscon">Terms</Link>and <Link className="termspol-a" to="/privacy"> Policy</Link></Typography>
         </div>
 
         <button className="cform-btn">SEND</button>

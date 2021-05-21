@@ -101,10 +101,12 @@ return (
       </p>
     </div>
 
-    <p className="b-captwo">Check Types of Insurance
+    <p className="b-captwo">Check Types of Insurance, click Insurance Types
     </p>
+    <br />
     <Link to="/benefits" className="email-a"
     id="gotomail">Insurance Types</Link>
+    <br />
     <br />
     <Link to="/form/1" className="email-a"
     id="gotomail">Avail Now</Link>

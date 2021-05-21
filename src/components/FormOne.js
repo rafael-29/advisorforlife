@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core'
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 
@@ -373,6 +374,7 @@ return(
                 onChange={handleChange} name="expid" />
             </div>
 
+            <Typography variant="h6">By clicking next you agree to our terms and Policy Agreement</Typography>
             <button onClick={submitToLocal}
             className="frmone-btn">NEXT</button>
 

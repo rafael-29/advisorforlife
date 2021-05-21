@@ -16,7 +16,7 @@ return(
 <h2>Changes and amendments</h2>
 <p>We reserve the right to modify this Agreement or its terms relating to the Website and Services at any time, effective upon posting of an updated version of this Agreement on the Website. When we do, we will revise the updated date at the bottom of this page. Continued use of the Website and Services after any such changes shall constitute your consent to such changes.</p>
 <h2>Acceptance of these terms</h2>
-<p>You acknowledge that you have read this Agreement and agree to all its terms and conditions. By accessing and using the Website and Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to access or use the Website and Services. This terms and conditions policy was created with the <a target="_blank" href="https://www.websitepolicies.com/terms-and-conditions-generator">terms and conditions generator</a>.</p>
+<p>You acknowledge that you have read this Agreement and agree to all its terms and conditions. By accessing and using the Website and Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to access or use the Website and Services. </p>
 <h2>Contacting us</h2>
 <p>If you would like to contact us to understand more about this Agreement or wish to contact us concerning any matter relating to it, you may do so via the <a target="_blank" rel="nofollow" href="https://sunfinancialadvisor.com/contact">contact form</a>.</p>
 <p>This document was last updated on May 3, 2021</p>

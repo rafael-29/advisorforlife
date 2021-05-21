@@ -18,6 +18,7 @@ import AddArticles from './components/AddArticles';
 import Articles from './components/Articles';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms'
+import FooterDown from './components/Footer'
 
 
 const App = () => {
@@ -65,6 +66,8 @@ return(
 <Route path="/articles" component={Articles} />
 <Route path="/privacy" component={Privacy} />
 <Route path="/termscon" component={Terms} />
+
+<FooterDown />
 
 </Router>
 )

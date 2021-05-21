@@ -20,7 +20,10 @@ export default function StickyFooter() {
 
 return (
   <div style={{
-  width: '100%'
+  width: '100%',
+  paddingTop: '20px',
+  paddingBottom: '35px',
+  background: '#f5f5f5'
   }}>
   <Container maxWidth="sm">
     <Typography variant="body1"><a className="termspol-a" href="/termscon">Terms</a> and <a className="termspol-a" href="/policy">Policy</a> agreement</Typography>

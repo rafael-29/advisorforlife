@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import {Checkbox, FormControlLabel} from '@material-ui/core'
+import {Checkbox, FormControlLabel, Typography} from '@material-ui/core'
 
 
 
@@ -77,9 +77,15 @@ return(
             className="cform-inp-m" />
         </div>
 
-        <FormControlLabel checked={accept} label={`I have read and accept ${(<Link to="/termscon">Terms</Link>)} and ${(<Link to="/privacy">Privacy Policy</Link>)}`}
-        control={<Checkbox />}
-        onChange={() => setAccept(!accept)} />
+        <div style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center'
+        }}>
+        <Checkbox checked={accept} onChange={() => setAccept(!accept)} />
+        <Typography variant="h6">I have read and accept <Link to="/termscon">Terms</Link>and <Link to="/privacy"> Policy</Link></Typography>
+        </div>
 
         <button className="cform-btn">SEND</button>
     </form>

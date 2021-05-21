@@ -2310,4 +2310,9 @@ footer {
             align-items: center;
   }
 }
+
+.termspol-a {
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=styles.css.map */

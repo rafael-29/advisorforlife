@@ -18,7 +18,7 @@ import AddArticles from './components/AddArticles';
 import Articles from './components/Articles';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms'
-import FooterDown from './components/Footer'
+import FooterDown from './components/FooterDown'
 
 
 const App = () => {

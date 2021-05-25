@@ -94,7 +94,7 @@ return (
     <div className="b-lefttwo">
       <p className="b-captwo"> <span className="cap-one">Are You Insured </span><br />
       if you are looking for high touch service and impatial advice<br />
-      you've come to the right place.<br/>
+      you've come to the right place. <br/>
       <a className="cap-a"
       href="mailto:henry.d.tupas@sunlife.com.ph">henry.d.tupas@sunlife.com.ph</a><br/>
       0917-187-8443

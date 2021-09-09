@@ -15,19 +15,19 @@ const [henMessages, setHenMessages] = useState()
 const [henBlogs, setHenBlogs] = useState()
 
 const fetchData = () => {
-axios.get('https://bakedbyartapi.herokuapp.com/customer')
+axios.get('https://sunfinancial.herokuapp.com/customer')
 .then( result => setCustomer(result.data))
 .catch(err => console.log(err))
 }
 
 const fetchMessages = () => {
-axios.get('https://bakedbyartapi.herokuapp.com/henrymessages')
+axios.get('https://sunfinancial.herokuapp.com/messages')
 .then(results => setHenMessages(results.data))
 .catch(err => console.log(err))
 }
 
 const fetchHenBlogs = () => {
-axios.get('https://bakedbyartapi.herokuapp.com/henblogs')
+axios.get('https://sunfinancial.herokuapp.com/blogs')
 .then( results => setHenBlogs(results.data))
 .catch(err => console.log(err))
 }
@@ -88,7 +88,7 @@ const renderArticles = () => (
 </div>
 )
 const delHenBlog = (theblog) => {
-axios.delete(`https://bakedbyartapi.herokuapp.com/henblogs/delete/${theblog._id}`)
+axios.delete(`https://sunfinancial.herokuapp.com/blogs/delete/${theblog._id}`)
 .then( () => {
 alert('henry article has been deleted')
 fetchHenBlogs()
@@ -96,7 +96,7 @@ fetchHenBlogs()
 .catch(err => console.log(err))
 }
 const delMes = themes => {
-axios.delete(`https://bakedbyartapi.herokuapp.com/henrymessages/delete/${themes}`)
+axios.delete(`https://sunfinancial.herokuapp.com/messages/delete/${themes}`)
 .then( () => {
 alert('deleted successfully')
 fetchMessages(); })

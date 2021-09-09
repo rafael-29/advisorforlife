@@ -18,7 +18,7 @@ setState({...state, [name]: value})
 }
 
 const submitState = () => {
-axios.post('https://bakedbyartapi.herokuapp.com/henblogs/add', state)
+axios.post('https://sunfinancial.herokuapp.com/blogs/add', state)
 .then( () => {
 alert('henry blog has been posted');
 window.location.reload();

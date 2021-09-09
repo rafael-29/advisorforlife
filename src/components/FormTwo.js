@@ -32,7 +32,7 @@ localStorage.setItem('form-two', JSON.stringify(this.state))
 
 submitToLocal = () => {
  
-axios.post(`https://bakedbyartapi.herokuapp.com/customer/add`, {
+axios.post(`https://sunfinancial.herokuapp.com/customer/add`, {
 formone: JSON.parse(localStorage.getItem('form-one')),
 formtwo: JSON.parse(localStorage.getItem('form-two'))
 })

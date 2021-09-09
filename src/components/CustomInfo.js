@@ -10,13 +10,13 @@ const id = props.theprops.match.params.id
 const [info, setInfo] = useState()
 
 const renderInfo = () => {
-axios.get(`https://bakedbyartapi.herokuapp.com/customer/${id}`)
+axios.get(`https://sunfinancial.herokuapp.com/customer/${id}`)
 .then( results => setInfo(results.data))
 .catch(err => console.log(err))
 }
 
 const deleteThisInfo = () => {
-axios.delete(`https://bakedbyartapi.herokuapp.com/customer/delete/${id}`)
+axios.delete(`https://sunfinancial.herokuapp.com/customer/delete/${id}`)
 .then( () => {
 alert('deleted from data')
 window.location.replace('/adminpage')})

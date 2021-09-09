@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import {Checkbox, FormControlLabel, Typography} from '@material-ui/core'
+import {Checkbox, Typography} from '@material-ui/core'
 
 
 
@@ -26,7 +26,7 @@ const sendForm = e => {
 e.preventDefault();
 if(accept === false) return alert('Please read and accept our terms and policies')
 
-axios.post('https://bakedbyartapi.herokuapp.com/henrymessages/add', cForm)
+axios.post('https://sunfinancial.herokuapp.com/messages/add', cForm)
 .then( () => {
 alert('Your message has been sent');
 window.location.reload();

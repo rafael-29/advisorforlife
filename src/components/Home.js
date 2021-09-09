@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 import {Link} from 'react-router-dom'
-import Footer from './Footer'
+
 
 
 export default function Home() {
@@ -216,10 +216,6 @@ return (
   <Link to="/contact" className="askme-btn">HOW TO START ?</Link>
 </div>
 
-
-
-
-<Footer />
 </div>
 )
 }

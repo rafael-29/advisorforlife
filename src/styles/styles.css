@@ -147,13 +147,13 @@
 .logo-name {
   font-size: 2.2rem;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
   font-weight: 600;
 }
 
 .privacy-page {
   padding: 4%;
-  color: #08313C;
+  color: #08313c;
   list-style: none;
 }
 
@@ -197,15 +197,15 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background: whitesmoke;
-  color: #08313C;
+  color: #08313c;
   left: 0;
   width: 40%;
   height: 100%;
   top: 0;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .men-bx {
@@ -227,11 +227,11 @@ header {
 
 .men-line {
   height: 3px;
-  background: #08313C;
+  background: #08313c;
   width: 30px;
   position: relative;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .men-close {
@@ -255,56 +255,56 @@ header {
   background: transparent;
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
-  -webkit-transition: .5;
-  transition: .5;
+  -webkit-transition: 0.5;
+  transition: 0.5;
 }
 
 .men-line::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 3px;
-  background: #08313C;
+  background: #08313c;
   width: 30px;
   -webkit-transform: translate(0, 8px);
           transform: translate(0, 8px);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .men-line::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 3px;
-  background: #08313C;
+  background: #08313c;
   width: 30px;
   -webkit-transform: translate(0, -8px);
           transform: translate(0, -8px);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .men-close .men-line::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 3px;
-  background: #08313C;
+  background: #08313c;
   width: 30px;
   -webkit-transform: translate(20px, 0) rotate(-45deg);
           transform: translate(20px, 0) rotate(-45deg);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .men-close .men-line::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 3px;
-  background: #08313C;
+  background: #08313c;
   width: 30px;
   -webkit-transform: translate(20px, 0) rotate(45deg);
           transform: translate(20px, 0) rotate(45deg);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .themenu-ul {
@@ -325,20 +325,20 @@ header {
 }
 
 .menu-li {
-  color: #08313C;
+  color: #08313c;
   font-size: 1.6rem;
   margin: 10px 0;
   padding-bottom: 6px;
 }
 
 .menu-li:hover {
-  border-bottom: 2px solid #08313C;
+  border-bottom: 2px solid #08313c;
 }
 
 .menu-link {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
 }
 
 .circle {
@@ -359,7 +359,7 @@ header {
   right: 0;
   width: 20%;
   height: 100%;
-  background: #002D3D;
+  background: #002d3d;
   z-index: -1;
 }
 
@@ -393,17 +393,17 @@ header {
 .b-capone {
   font-family: sans-serif;
   font-size: 1.5rem;
-  color: #08313C;
+  color: #08313c;
 }
 
 .b-captwo {
   font-size: 1.2rem;
-  color: #08313C;
+  color: #08313c;
   font-family: sans-serif;
 }
 
 .cap-one {
-  color: #08313C;
+  color: #08313c;
   font-family: sans-serif;
   font-size: 1.9rem;
   font-weight: 600;
@@ -411,21 +411,21 @@ header {
 
 .cap-a {
   font-family: sans-serif;
-  color: #08313C;
+  color: #08313c;
   font-weight: 600;
 }
 
 .email-a {
   text-decoration: none;
   padding: 6px 20px;
-  background: #08313C;
+  background: #08313c;
   color: white;
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
 }
 
 .email-a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .b-lefttwo {
@@ -439,7 +439,7 @@ header {
 .ask-name {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
   margin-bottom: 80px;
 }
 
@@ -447,8 +447,8 @@ header {
   height: 400px;
   width: 350px;
   cursor: pointer;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin-bottom: 40px;
 }
 
@@ -485,7 +485,7 @@ header {
   margin-top: 50px;
   text-decoration: none;
   color: white;
-  background-color: #08313C;
+  background-color: #08313c;
   padding: 5px 9px;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -493,7 +493,7 @@ header {
 }
 
 .askme-btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .askme-btn:active {
@@ -523,7 +523,7 @@ header {
 
 .sl-headtwo {
   font-size: 2rem;
-  color: #08313C;
+  color: #08313c;
   font-family: "PT Sans", sans-serif;
   margin-left: 80px;
   margin-bottom: 50px;
@@ -585,12 +585,12 @@ header {
 .sl-hone {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  color: #08313C;
+  color: #08313c;
   font-weight: 900;
 }
 
 .sl-para {
-  color: #08313C;
+  color: #08313c;
   font-family: sans-serif;
   font-style: italic;
   font-size: 1.1rem;
@@ -631,7 +631,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: white;
-  background-color: #08313C;
+  background-color: #08313c;
 }
 
 #ben-type {
@@ -661,7 +661,9 @@ header {
   margin-bottom: 20px;
 }
 
-.fa-facebook-f, .fa-linkedin-in, .fa-envelope {
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-envelope {
   color: #752655;
 }
 
@@ -682,10 +684,10 @@ header {
   background: #fac917;
   width: 679px;
   padding: 30px 18px;
-  color: #08313C;
+  color: #08313c;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
-  opacity: .9;
+  opacity: 0.9;
   margin-bottom: 20px;
 }
 
@@ -765,7 +767,7 @@ header {
 .intro-link {
   padding: 4px 12px;
   border-radius: 2px;
-  color: #08313C;
+  color: #08313c;
   font-family: "Montserrat", sans-serif;
   border: none;
   outline: none;
@@ -901,7 +903,7 @@ header {
 }
 
 .frmone-btn:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .formtwo-page {
@@ -910,7 +912,7 @@ header {
 }
 
 .ftwo-prec {
-  color: #08313C;
+  color: #08313c;
   letter-spacing: 1px;
   font-family: sans-serif;
   margin-bottom: 30px;
@@ -925,7 +927,7 @@ header {
 .ftwo-inst {
   font-size: 1.2rem;
   font-family: sans-serif;
-  color: #08313C;
+  color: #08313c;
   margin-bottom: 35px;
 }
 
@@ -956,7 +958,7 @@ header {
 .q-lbl {
   font-family: sans-serif;
   letter-spacing: 1px;
-  color: #08313C;
+  color: #08313c;
   cursor: pointer;
   -webkit-transform: translate(5px, 1px);
           transform: translate(5px, 1px);
@@ -964,7 +966,7 @@ header {
 }
 
 .formtwo-answer-prec {
-  color: #08313C;
+  color: #08313c;
   font-weight: 600;
   font-family: sans-serif;
   margin-bottom: 20px;
@@ -998,7 +1000,7 @@ header {
 
 .f-h1 {
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
   margin-bottom: 20px;
 }
 
@@ -1076,7 +1078,7 @@ header {
   }
   .f-h1 {
     font-family: "Montserrat", sans-serif;
-    color: #08313C;
+    color: #08313c;
     text-align: center;
     font-size: 1.4rem;
   }
@@ -1111,6 +1113,7 @@ header {
   }
   .front {
     padding-top: 90px;
+    padding-left: 15px;
   }
   .sun-life {
     padding: 100px 0 150px 12px;
@@ -1132,11 +1135,11 @@ header {
   .sl-hone {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
-    color: #08313C;
+    color: #08313c;
     font-weight: 900;
   }
   .sl-para {
-    color: #08313C;
+    color: #08313c;
     font-family: sans-serif;
     font-style: italic;
     font-size: 1rem;
@@ -1162,7 +1165,7 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: white;
-    background-color: #08313C;
+    background-color: #08313c;
   }
   #ben-type {
     padding: 4px 2px;
@@ -1212,7 +1215,7 @@ header {
 
 .dash-board {
   width: 16%;
-  background: #08313C;
+  background: #08313c;
   height: 100vh;
   position: relative;
 }
@@ -1242,27 +1245,27 @@ header {
 .d-line {
   position: absolute;
   height: 2px;
-  background-color: #08313C;
+  background-color: #08313c;
   width: 30px;
 }
 
 .d-line::before {
   position: absolute;
-  content: '';
+  content: "";
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
   height: 2px;
-  background-color: #08313C;
+  background-color: #08313c;
   width: 30px;
 }
 
 .d-line::after {
   position: absolute;
-  content: '';
+  content: "";
   -webkit-transform: translateY(7px);
           transform: translateY(7px);
   height: 2px;
-  background-color: #08313C;
+  background-color: #08313c;
   width: 30px;
 }
 
@@ -1287,7 +1290,7 @@ header {
 
 .dash-name {
   font-size: 1.8rem;
-  color: #08313C;
+  color: #08313c;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
@@ -1306,7 +1309,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #08313C;
+  color: #08313c;
 }
 
 .fa-user-shield {
@@ -1355,14 +1358,14 @@ header {
 
 .dashb-btn:hover {
   background: #f3f6f7;
-  color: #08313C;
+  color: #08313c;
 }
 
 .dash-active {
   border: none;
   padding: 20px 0;
   background: #fac917;
-  color: #08313C;
+  color: #08313c;
   outline: none;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -1410,7 +1413,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  border-bottom: 2px solid #08313C;
+  border-bottom: 2px solid #08313c;
   height: 40px;
   margin: 0 auto 1px auto;
 }
@@ -1424,7 +1427,7 @@ header {
   position: absolute;
   bottom: 0;
   font-size: 1.2rem;
-  color: #08313C;
+  color: #08313c;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -1534,13 +1537,13 @@ header {
           align-items: center;
   padding-bottom: 5px;
   margin-bottom: 7px;
-  border-bottom: 2px solid #08313C;
+  border-bottom: 2px solid #08313c;
 }
 
 .cp-ttle {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
 }
 
 .cp-delete-btn {
@@ -1577,7 +1580,7 @@ header {
 
 .c-a-tle {
   letter-spacing: 1px;
-  color: #08313C;
+  color: #08313c;
   font-family: sans-serif;
   font-size: 1.6rem;
   margin-bottom: 30px;
@@ -1608,7 +1611,7 @@ header {
   .cp-ttle {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
-    color: #08313C;
+    color: #08313c;
   }
   .cp-delete-btn {
     padding: 4px 11px;
@@ -1669,7 +1672,7 @@ footer {
 
 @media (max-width: 740px) {
   .admin-con {
-    color: #08313C;
+    color: #08313c;
     size: 1.2rem;
   }
   .foot-cap {
@@ -1715,7 +1718,7 @@ footer {
   margin-top: 1%;
   font-size: 1.8rem;
   letter-spacing: 2px;
-  opacity: .8;
+  opacity: 0.8;
   margin-left: 5%;
 }
 
@@ -1739,7 +1742,7 @@ footer {
   letter-spacing: 1px;
   font-family: sans-serif;
   color: black;
-  opacity: .9;
+  opacity: 0.9;
   border: none;
   background: none;
   width: 450px;
@@ -1752,7 +1755,7 @@ footer {
 
 .inpnum::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 30px;
   width: 35px;
   right: 7%;
@@ -1805,7 +1808,7 @@ footer {
 }
 
 .cform-name::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   height: 90%;
@@ -1830,7 +1833,7 @@ footer {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  opacity: .9;
+  opacity: 0.9;
   outline: none;
   border-radius: 5px;
 }
@@ -1852,7 +1855,7 @@ footer {
 
 .cform-btn:active {
   background-color: #f3f6f7;
-  color: #08313C;
+  color: #08313c;
 }
 
 @media (max-width: 900px) {
@@ -1871,7 +1874,7 @@ footer {
   }
   .inpnum::after {
     position: absolute;
-    content: '';
+    content: "";
     height: 30px;
     width: 35px;
     right: 24%;
@@ -1896,7 +1899,7 @@ footer {
     letter-spacing: 1px;
     font-family: sans-serif;
     color: black;
-    opacity: .9;
+    opacity: 0.9;
     border: none;
     background: none;
     width: 240px;
@@ -1957,7 +1960,7 @@ footer {
 .hen-mess {
   max-width: 500px;
   margin-bottom: 20px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .hen-span {
@@ -2055,7 +2058,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: white;
-  background-color: #08313C;
+  background-color: #08313c;
   border-radius: 4px;
   padding: 4px 6px;
   width: 90px;
@@ -2066,12 +2069,12 @@ footer {
 .h-empty {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .h-b-author::before {
   position: absolute;
-  content: '-';
+  content: "-";
   left: 0;
 }
 
@@ -2119,26 +2122,26 @@ footer {
 
 .h-b-htwo {
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
   font-size: 1.8rem;
   margin-bottom: 2px;
 }
 
 .h-b-posted {
   font-family: monospace;
-  opacity: .9;
+  opacity: 0.9;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
 .h-b-span {
   font-family: "PT Sans", sans-serif;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .h-b-pone {
   font-family: sans-serif;
-  color: #08313C;
+  color: #08313c;
   margin-bottom: 18px;
   font-size: 1.2rem;
 }
@@ -2149,7 +2152,7 @@ footer {
   top: 20%;
   margin-right: 5%;
   background-color: #e2e0f0;
-  color: #08313C;
+  color: #08313c;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 6px 10px;
@@ -2198,33 +2201,33 @@ footer {
   width: 100%;
   padding: 5px;
   font-size: 1.2rem;
-  border: 1px solid #08313C;
+  border: 1px solid #08313c;
   border-radius: 4px;
   outline: none;
 }
 
 .a-a-inp::-webkit-input-placeholder {
-  opacity: .7;
+  opacity: 0.7;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
 }
 
 .a-a-inp:-ms-input-placeholder {
-  opacity: .7;
+  opacity: 0.7;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
 }
 
 .a-a-inp::-ms-input-placeholder {
-  opacity: .7;
+  opacity: 0.7;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
 }
 
 .a-a-inp::placeholder {
-  opacity: .7;
+  opacity: 0.7;
   font-family: "Montserrat", sans-serif;
-  color: #08313C;
+  color: #08313c;
 }
 
 .a-a-sub {
@@ -2232,7 +2235,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 600px;
   color: white;
-  background-color: #08313C;
+  background-color: #08313c;
   border: none;
   border-radius: 4px;
   outline: none;
@@ -2244,7 +2247,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 600px;
   color: white;
-  background-color: #08313C;
+  background-color: #08313c;
   border: none;
   border-radius: 4px;
   outline: none;
@@ -2254,12 +2257,12 @@ footer {
 }
 
 .a-a-sub:active {
-  color: #08313C;
+  color: #08313c;
   background-color: white;
 }
 
 .a-a-add:active {
-  color: #08313C;
+  color: #08313c;
   background-color: white;
 }
 

@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import {Link, useHistory} from 'react-router-dom'
 import axios from 'axios'
 
 export default function AddArticles() {
-
+const history = useHistory();
 const [state, setState] = useState({
 title: '',
 content: '',
@@ -32,7 +32,16 @@ let btn = window.document.querySelector('.a-a-add');
 hidden.style.display="block"
 btn.style.display="none"
 }
+const authentic = () => {
+if(localStorage.getItem("sunAdvisortok") === null){
+    history.push("/")
+}
+}
 
+useEffect( () => {
+    authentic();
+
+})
 return (
 <div className="add-article-page">
     <div className="about-header">

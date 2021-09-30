@@ -143,10 +143,14 @@ useEffect( () => {
 fetchData();
 fetchMessages();
 fetchHenBlogs();
-authentic()
+
 
 
 },[]);
+
+useEffect( () => {
+    authentic()
+})
 
 return(
 <div className="henry-page">

@@ -175,7 +175,10 @@ return(
             
             </div>
             <div className="log-out">
-                <div  onClick={() => window.location.replace('/')}
+                <div onClick={() => {
+                    localStorage.clear();
+                    history.push("/");
+                }}
                  className="dash-name">Sign out <i className="fas fa-sign-out-alt"></i></div>
             </div>
         </div>

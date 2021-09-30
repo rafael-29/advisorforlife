@@ -25,7 +25,7 @@ const loginValid = async () => {
     if(!result) return setWrong('Invalid User')
 
     localStorage.setItem("sunAdvisortok", JSON.stringify(result.data.token))
-    
+    setWrong("Authenticating ...")
     window.location.replace('/adminpage')
   
    setIsLoading(false)
@@ -63,7 +63,7 @@ return (
 
         <div className="admin-btnz">
         {isLoading ? <CircularProgress style={{
-            marginLeft: "130px"
+            marginLeft: "123px"
         }} /> : 
         (
         <React.Fragment>

@@ -22,9 +22,9 @@ const loginValid = async () => {
     const result = await axios.post("https://sunfinancial.herokuapp.com/auth/login", logenData);
     if(!result.data) return setWrong('Invalid User')
 
-   
+   console.log(result)
 
-    window.location.replace('/adminpage')
+    // window.location.replace('/adminpage')
 
     
     

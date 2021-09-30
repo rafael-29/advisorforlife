@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function SignIn() {
@@ -8,12 +9,21 @@ const [adminPass, setAdminPass] = useState()
 
 const [wrong, setWrong] = useState()
     
-const loginValid = () => {
-if(adminUser === 'henry' && adminPass === 'henry'){
-window.location.replace('/adminpage')
-}else{
-setWrong('Invalid User')
-}
+const loginValid = async () => {
+
+    const logenData = {
+        username: adminUser,
+        password: adminPass
+    }
+
+    const result = await axios.post("https://sunfinancial.herokuapp.com/auth/login", logenData);
+
+    console.log(result);
+
+    //window.location.replace('/adminpage')
+
+    setWrong('Invalid User')
+    
 }
 
 return (

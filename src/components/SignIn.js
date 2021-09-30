@@ -20,15 +20,14 @@ const loginValid = async () => {
         password: adminPass
     }
 
+   try {
     const result = await axios.post("https://sunfinancial.herokuapp.com/auth/login", logenData);
-    
+    if(!result) return setWrong('Invalid User')
 
    console.log(result)
-
-   try {
-       
    } catch (error) {
-    setWrong('Invalid User')
+   console.log("error in sign in")
+   return setWrong('Invalid User')
    }
 
     // window.location.replace('/adminpage')
@@ -59,8 +58,7 @@ return (
 
         <div className="admin-btnz">
         {isLoading ? <CircularProgress style={{
-            marginLeft: "auto",
-            marginRight: "auto"
+            marginLeft: "100px"
         }} /> : 
         (
         <React.Fragment>

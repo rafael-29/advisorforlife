@@ -9,10 +9,11 @@ const [adminUser, setAdminUser] = useState()
 const [adminPass, setAdminPass] = useState()
 
 const [wrong, setWrong] = useState()
+const [isLoading, setIsLoading] = useState(false);
     
 const loginValid = async () => {
 
-    setWrong('load')
+   setIsLoading(true)
 
     const logenData = {
         username: adminUser,
@@ -20,9 +21,15 @@ const loginValid = async () => {
     }
 
     const result = await axios.post("https://sunfinancial.herokuapp.com/auth/login", logenData);
-    if(!result.data) return setWrong('Invalid User')
+    
 
    console.log(result)
+
+   try {
+       
+   } catch (error) {
+    setWrong('Invalid User')
+   }
 
     // window.location.replace('/adminpage')
 
@@ -51,11 +58,19 @@ return (
         </div>
 
         <div className="admin-btnz">
-        {wrong === undefined ? <button onClick={loginValid} className="admin-subcan">SUBMIT</button> : 
-        wrong === "load" ? <CircularProgress /> : <button onClick={loginValid} className="admin-subcan">SUBMIT</button>}
+        {isLoading ? <CircularProgress style={{
+            marginLeft: "auto",
+            marginRight: "auto"
+        }} /> : 
+        (
+        <React.Fragment>
+        <button onClick={loginValid} className="admin-subcan">SUBMIT</button> 
+        <button onClick={() => window.location.replace('/')}className="admin-subcan can" >CANCEL</button>
+        </React.Fragment>
+        )
+        }
         
-        <button onClick={() => window.location.replace('/')}
-        className="admin-subcan can" >CANCEL</button>
+        
         </div>
         <Link id="linktoadmin" style={{opacity: '0', pointerEvents: 'none'}} to="/adminpage">go</Link>
     </div>

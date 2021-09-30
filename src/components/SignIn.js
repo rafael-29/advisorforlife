@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { CircularProgress } from "@material-ui/core"
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -11,18 +12,21 @@ const [wrong, setWrong] = useState()
     
 const loginValid = async () => {
 
+    setWrong('load')
+
     const logenData = {
         username: adminUser,
         password: adminPass
     }
 
     const result = await axios.post("https://sunfinancial.herokuapp.com/auth/login", logenData);
+    if(!result.data) return setWrong('Invalid User')
 
-    console.log(result);
+   
 
-    //window.location.replace('/adminpage')
+    window.location.replace('/adminpage')
 
-    setWrong('Invalid User')
+    
     
 }
 
@@ -47,7 +51,9 @@ return (
         </div>
 
         <div className="admin-btnz">
-        <button onClick={loginValid} className="admin-subcan">SUBMIT</button>
+        {wrong === undefined ? <button onClick={loginValid} className="admin-subcan">SUBMIT</button> : 
+        wrong === "load" ? <CircularProgress /> : <button onClick={loginValid} className="admin-subcan">SUBMIT</button>}
+        
         <button onClick={() => window.location.replace('/')}
         className="admin-subcan can" >CANCEL</button>
         </div>

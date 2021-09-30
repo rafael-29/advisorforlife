@@ -24,7 +24,8 @@ const loginValid = async () => {
     const result = await axios.post("https://sunfinancial.herokuapp.com/auth/login", logenData);
     if(!result) return setWrong('Invalid User')
 
-    console.log("di nag return")
+    localStorage.setItem("sunAdvisortok", JSON.stringify(result.data.token))
+    
     window.location.replace('/adminpage')
   
    setIsLoading(false)
@@ -62,7 +63,7 @@ return (
 
         <div className="admin-btnz">
         {isLoading ? <CircularProgress style={{
-            marginLeft: "100px"
+            marginLeft: "130px"
         }} /> : 
         (
         <React.Fragment>

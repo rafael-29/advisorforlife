@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 
 const inq = 'inquiries'
 const articles = 'articles'
@@ -8,6 +8,7 @@ const messages = 'messages'
 
 const AdminPage = () => {
 
+const history = useHistory();
 const [customers, setCustomer] = useState()
 const [page, setPage] = useState(inq)
 
@@ -131,11 +132,18 @@ const renderMessages = () => (
 </div>
 )
 
+const authentic = () => {
+if(localStorage.getItem("sunAdvisortok") === null){
+    history.push("/")
+}
+}
+
 useEffect( () => {
 
 fetchData();
 fetchMessages();
 fetchHenBlogs();
+authentic()
 
 
 },[]);
